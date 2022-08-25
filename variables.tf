@@ -32,10 +32,10 @@ variable "boolean" {
 variable "string_type" {
   type = string
   validation {
-    condition     = (var.string_type == "randomstring2&$%@")
+    condition     = (var.string_type == "randomstring2\"&$%@")
     error_message = "strings do not match."
   }
-  default = "randomstring2&$%@"
+  default = "randomstring2\"&$%@"
 }
 
 variable "list_of_lists" {
